@@ -1,0 +1,573 @@
+*
+    margin: 0
+    padding: 0
+
+
+@font-face
+  font-family: "PTRegular"
+  src: url('/fonts/PTRegular.ttf')
+
+@font-face
+  font-family: "PTMedium"
+  src: url('/fonts/PTMedium.ttf')
+
+/* -- Variables -- */
+
+/* Colors */
+
+$primary-red: #D70E2A
+$primary-white: #FFFFFF
+$divider-black: #000000
+
+/* Fonts */
+
+$font-regular: "PTRegular", sans-serif
+$font-medium: "PTMedium", sans-serif
+
+body
+    background-color: $primary-white
+    font-family: $font-medium
+
+header
+    height: 60px
+    max-width: 1000px
+    margin: 0 auto
+    font-family: $font-medium
+    .wrapper .header__menu
+        width: 32px
+        display: inline-block
+        .header__menu-animate
+            transition: all 0.5s ease
+            transform: rotate(-90deg)
+
+        .header__menu-item
+            background-color: $primary-red
+            height: 2px
+            margin: 5px auto 5px auto
+            width: 24px
+.header:after
+    content: ''
+    width: 207px
+    height: 3px
+    background-color: $primary-red
+    position: absolute
+
+.header__divider
+        height: 1px
+        border: none
+        background-color: rgb(0 0 0 / 10%)
+        width: 100%
+
+.phone__series-divider
+    display: none
+
+
+.wrapper
+    padding: 0 25px 0 25px
+    max-width: 1000px
+    box-sizing: border-box
+    margin-left: auto
+    margin-right: auto
+    .header__frame
+        gap: 30px
+        display: flex
+        align-items: center
+        .header__frame-icons
+            display: flex
+            gap: 20px
+            align-items: center
+        .header__frame-title
+            font-size: 14px
+            line-height: 21px
+            color: $divider-black
+            opacity: 0.7
+            font-family: $font-medium
+    .slogan
+        margin: 35px 0 35px 0
+        font-family: $font-regular
+        height: 50px
+        font-weight: 700
+        font-size: 38px
+        line-height: 50px
+
+.header__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 25px 10px 25px
+
+main
+    .divider
+        max-width: 1000px
+        margin: 0 auto 0 auto
+        border: none
+        background-color: rgb(0 0 0 / 30%)
+        height: 1px
+        width: 100%
+    .new__design-block
+        margin: 40px 0 40px 0
+        .new__design__block-intro
+            font-size: 30px
+            line-height: 40px
+            font-family: $font-regular
+        .new__design-cards
+            display: flex
+            margin: 40px 0 40px 0
+            gap: 20px
+            align-items: flex-start
+            .new__design-card
+                max-width: 222px
+                width: 222px
+                .design__card-description
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .card__description-image
+                        .colour__icon
+                            height: 28px
+                            width: 28px
+                            border-radius: 50px
+                    .description__first-image
+                        margin: 20px 0 0 0
+                    .first__card-divider
+                        background-color: $primary-white
+                        opacity: 0.25
+                        height: 0
+                        border: 1px solid $primary-white
+                    .second__card-divider
+                        margin: 25px 0 0 0
+                        opacity: 0.1
+                        background-color: $divider-black
+                    .design__card-text
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 24px
+                        color: $divider-black
+                        margin-top: 20px
+                    .first__card-text
+                        margin: 20px 0 48px 0
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 21px
+                        color: $primary-white
+                    .card__colours-icons
+                        display: grid
+                        grid-template-columns: 28px 28px
+                        grid-template-rows: 28px 28px
+                        grid-gap: 4px
+                        .first__icon
+                            background: linear-gradient(to left, #BEF0FE, #FFD6D3)
+                        .second__icon
+                            background: linear-gradient(to left, #020202, #666666)
+                        .third__icon
+                            background: linear-gradient(to left, #029965, #66C1A2)
+                        .fourth__icon
+                            background: linear-gradient(to left, #FAEE61, #FEF694)
+            .first__design-card
+                background-color: #171717
+                border-radius: 5px
+                padding: 0 15px 0 15px
+                box-sizing: border-box
+
+.advantages__block
+    .advantages__block-intro
+        margin: 39px 0 50px 0
+        font-family: $font-regular
+        font-style: normal
+        font-weight: 700
+        font-size: 30px
+        line-height: 40px
+        color: $divider-black
+    .advantages__block-overall
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        gap: 50px
+        .advantages__block-image
+            width: 50%
+        .advantages__block-summary
+            width: 50%
+            .advantages__block-info
+                display: flex
+                align-items: center
+                justify-content: space-between
+                gap: 50px
+                margin-bottom: 40px
+                .advantages__block-text
+                    font-family: $font-medium
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 24px
+                    color: $divider-black
+
+.accessories__block
+    .accessories__block-intro
+        margin: 60px 0 50px 0
+        font-family: $font-regular
+        font-size: 30px
+        line-height: 40px
+        color: $divider-black
+    .accessories__block-list
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 60px
+        .accessories__block-item
+            max-width: 222px
+            width: calc(25% - 20px)
+            .accessories__block-image
+                width: 100%
+            .img__accessories-divider
+                margin: 25px 0 20px 0
+                background-color: $divider-black
+                opacity: 0.1
+            .accessories__block-divider
+                margin: 0 0 20px 0
+                background-color: rgb(0 0 0 / 10%)
+            .accessories__block-divider:before
+                content: ""
+                width: 50px
+                height: 1px
+                background-color: $divider-black
+                opacity: 0.5
+                position: absolute
+                .accessories__block-text
+                    font-family: $font-medium
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 24px
+                    color: $divider-black
+
+.applications__block
+    padding-top: 40px
+    margin-bottom: 100px
+    .applications__block-intro
+        font-family: $font-regular
+        font-size: 30px
+        line-height: 40px
+        color: $divider-black
+        margin-bottom: 50px
+    .applications__block-list
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        column-gap: 20px
+        row-gap: 60px
+        .applications__block-item
+            max-width: 303px
+            width: calc(34% - 20px)
+            gap: 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+        .applications__block-divider
+            display: none
+
+@media screen and (max-width: 720px)
+    .header
+        max-width: 720px
+
+    .header:after
+        width: 149px
+
+    main .new__design-block, main .new__design-block .new__design-cards
+        margin-bottom: 10px
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 0
+
+    main .new__design-block .new__design-cards .new__design-card
+        max-width: 325px
+        width: calc(50% - 20px)
+        margin-bottom: 50px
+    
+    .advantages__block .advantages__block-overall .advantages__block-image, .accessories__block .accessories__block-list .accessories__block-item
+        max-width: 325px
+
+    main .new__design-block .new__design-cards .new__design-card .design__card-description .design__card-text, .advantages__block .advantages__block-overall .advantages__block-info .advantages__block-text
+        font-size: 14px
+        line-height: 21px
+    
+    .advantages__block .advantages__block-overall .advantages__block-info .advantages__block-text
+        max-width:203px
+
+    .advantages__block .advantages__block-overall
+        justify-content: normal
+
+    .advantages__block .advantages__block-overall, .advantages__block .advantages__block-overall .advantages__block-info
+        gap: 30px
+
+    .accessories__block .accessories__block-list .accessories__block-item
+        width: calc( 50% - 20px )
+        margin-bottom: 50px
+
+    .accessories__block .accessories__block-list
+        margin-bottom: 10px
+        flex-wrap: wrap
+
+    .applications__block .applications__block-list .applications__block-item
+        max-width: 210px
+        width: calc( 34% -  18px)
+
+    .applications__block .applications__block-list
+        column-gap: 20px
+        row-gap: 40px
+        .applications__block-text
+            font-size: 14px
+            line-height: 21px
+
+@media screen and (max-width: 545px)
+    header
+        height: 50px
+    .header:after
+        content: none
+    .header__divider
+        display: none
+    .wrapper
+        padding: 0 15px 0 15px
+    .header__wrap
+        padding: 10px 15px 10px 15px
+    .wrapper .slogan
+        font-size: 30px
+        line-height: 40px
+        margin: 30px 0 30px 0
+        height: auto
+    .wrapper .header__frame .header__frame-icons
+        gap: 15px
+        .header__frame-logo
+            width: 30px
+    
+    .wrapper .header__frame .header__frame-title
+        display: none
+
+    .phone__series-divider
+        display: flex
+        align-items: center
+        height: 28px
+        background-color: #EFEFEF
+        .phone__series-text
+            font-family: $font-medium
+            font-size: 12px
+            line-height: 16px
+            color: $divider-black
+            opacity: 0.7
+            margin: 0 15px 0 15px
+
+    main .new__design-block
+        margin: 20px 0 20px 0
+    main .new__design-block .new__design__block-intro
+        font-size: 22px
+        line-height: 31px
+
+    main .new__design-block .new__design-cards
+        margin: 30px 0 50px 0
+        flex-wrap: wrap
+        column-gap: 20px
+        row-gap: 40px
+        justify-content: space-between
+        .first__design-card
+            max-width: 100%
+            width: 100%
+            order: 0
+        .second__design-card
+            max-width: 100%
+            width: 100%
+            order: 3
+        .third__design-card, .fourth__design-card
+            max-width: calc(50% - 20px)
+            .design__card-description .design__card-text
+                font-weight: 500
+                font-size: 12px
+                line-height: 17px
+    
+    .advantages__block .advantages__block-intro
+        margin: 20px 0 30px 0
+        font-size: 22px
+        line-height: 31px
+
+    .advantages__block .advantages__block-overall
+        flex-direction: column
+        gap: 40px
+        .advantages__block-image
+            max-width: calc(100% + 30px)
+            width: calc(100% + 30px)
+            margin-left: -15px
+        .advantages__block-summary
+            width: 100%
+        .advantages__block-info
+            flex-direction: column
+            row-gap: 30px
+            .advantages__block-text
+                font-weight: 500
+                font-size: 14px
+                line-height: 21px
+                max-width: 100%
+    .accessories__block .accessories__block-intro
+        margin: 30px 0 30px 0
+        font-size: 22px
+        line-height: 31px
+    .accessories__block .accessories__block-list
+        margin-bottom: 50px
+        flex-wrap: wrap
+        .accessories__block-item
+            max-width: calc(50% - 20px)
+            width: calc(50% - 20px)
+            .accessories__block-text
+                font-size: 14px
+                line-height: 21px
+        .accessories__block-noimg
+            width: calc(50% - 20px)
+            width: calc(50% - 20px)
+            margin-top: 40px
+            .accessories__block-text
+                font-size: 12px
+                line-height: 17px
+
+    .applications__block
+        padding-top: 20px
+        .applications__block-intro
+            font-size: 22px
+            line-height: 31px
+            margin-bottom: 30px
+        .applications__block-list
+            .applications__block-item
+                max-width: 100%
+                width: 100%
+                flex-direction: row
+            .applications__block-divider
+                display: initial
+                opacity: 0.1
+                background-color: $divider-black
+            .applications__block-item:nth-child(4n+3)
+                flex-direction: row-reverse
+
+    
+@media screen and (max-width: 320px)
+    header
+        height: 50px
+    .header:after
+        content: none
+    .header__divider
+        display: none
+    .wrapper
+        padding: 0 15px 0 15px
+    .header__wrap
+        padding: 10px 15px 10px 15px
+    .wrapper .slogan
+        font-size: 30px
+        line-height: 40px
+        margin: 30px 0 30px 0
+        height: auto
+    .wrapper .header__frame .header__frame-icons
+        gap: 15px
+        .header__frame-logo
+            width: 25px
+    
+    .wrapper .header__frame .header__frame-title
+        display: none
+
+    .phone__series-divider
+        display: flex
+        align-items: center
+        height: 24px
+        background-color: #EFEFEF
+        .phone__series-text
+            font-family: $font-medium
+            font-size: 10px
+            line-height: 14px
+            color: $divider-black
+            opacity: 0.7
+            margin: 0 15px 0 15px
+
+    main .new__design-block
+        margin: 20px 0 20px 0
+    main .new__design-block .new__design__block-intro
+        font-size: 22px
+        line-height: 31px
+
+    main .new__design-block .new__design-cards
+        margin: 30px 0 50px 0
+        flex-wrap: wrap
+        column-gap: 20px
+        row-gap: 40px
+        justify-content: space-between
+        .first__design-card
+            max-width: 290px
+            width: 100%
+            order: 0
+        .second__design-card
+            max-width: 290px
+            width: 100%
+            order: 3
+        .third__design-card, .fourth__design-card
+            max-width: 141px
+            width: calc(50% - 20px)
+            .design__card-description .design__card-text
+                font-weight: 500
+                font-size: 12px
+                line-height: 17px
+    
+    .advantages__block .advantages__block-intro
+        margin: 20px 0 30px 0
+        font-size: 22px
+        line-height: 31px
+
+    .advantages__block .advantages__block-overall
+        flex-direction: column
+        gap: 40px
+        .advantages__block-image
+            width: calc(100% + 30px)
+            margin-left: -15px
+        .advantages__block-summary
+            width: 100%
+        .advantages__block-info
+            flex-direction: column
+            row-gap: 30px
+            .advantages__block-text
+                font-weight: 500
+                font-size: 14px
+                line-height: 21px
+                max-width: 320px
+    .accessories__block .accessories__block-intro
+        margin: 30px 0 30px 0
+        font-size: 22px
+        line-height: 31px
+    .accessories__block .accessories__block-list
+        margin-bottom: 50px
+        flex-wrap: wrap
+        .accessories__block-item
+            max-width: 290px
+            width: 100%
+            .accessories__block-text
+                font-size: 14px
+                line-height: 21px
+        .accessories__block-noimg
+            max-width: 141px
+            width: calc(50% - 8px)
+            margin-top: 40px
+            .accessories__block-text
+                font-size: 12px
+                line-height: 17px
+
+    .applications__block
+        padding-top: 20px
+        .applications__block-intro
+            font-size: 22px
+            line-height: 31px
+            margin-bottom: 30px
+        .applications__block-list
+            .applications__block-item
+                max-width: 290px
+                width: 100%
+                flex-direction: row
+            .applications__block-divider
+                display: initial
+                opacity: 0.1
+                background-color: $divider-black
+            .applications__block-item:nth-child(4n+3)
+                flex-direction: row-reverse
